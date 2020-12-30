@@ -1,12 +1,12 @@
 # NextMock
 
-NextMock is an enhanced mock for [unittest.mock.Mock](https://docs.python.org/3/library/unittest.mock.html).
+NextMock is an enhanced mock for [unittest.mock.Mock](https://docs.python.org/3/library/unittest.mock.html#unittest.mock.Mock).
 
 ## Features
 
 - [Argument matching](#with-args) supported.
 - Async version (AsyncMock) provided.
-- Compatible with [unittest.mock.Mock](https://docs.python.org/3/library/unittest.mock.html).
+- Compatible with [unittest.mock.Mock](https://docs.python.org/3/library/unittest.mock.html#unittest.mock.Mock).
 
 ## Usage
 
@@ -127,7 +127,7 @@ with pytest.raises(ValueError) as e:
 
 ## Compatibility
 
-Inherit behavior from [unittest.mock.Mock](https://docs.python.org/3/library/unittest.mock.html).
+Inherit behavior from [unittest.mock.Mock](https://docs.python.org/3/library/unittest.mock.html#unittest.mock.Mock).
 
 > Check out [`/nextmock/test/test_mock_compatibility.py`](https://github.com/pilagod/nextmock/blob/master/nextmock/test/test_mock_compatibility.py) for comprehensive examples.
 
