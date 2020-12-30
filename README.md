@@ -4,7 +4,7 @@ NextMock is an enhanced mock for [unittest.mock.Mock](https://docs.python.org/3/
 
 ## Features
 
-- [Argument matching](#with-args) supported.
+- Argument matching supported.
 - Async version (AsyncMock) provided.
 - Compatible with [unittest.mock.Mock](https://docs.python.org/3/library/unittest.mock.html#unittest.mock.Mock).
 
