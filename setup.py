@@ -4,7 +4,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="nextmock-pilagod",
+    name="nextmock",
     version="0.0.0",
     author="pilagod",
     author_email="pilagooood@gmail.com",
