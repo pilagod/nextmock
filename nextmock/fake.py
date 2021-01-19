@@ -1,3 +1,4 @@
+from enum import Enum
 from typing import Any, Optional
 
 from .arg import Arg
@@ -61,7 +62,7 @@ class Fake:
         return self._match_value(arg1, arg2)
 
     def _is_object(self, arg: Any) -> bool:
-        return hasattr(arg, "__dict__")
+        return hasattr(arg, "__dict__") and not isinstance(arg, Enum)
 
     def _match_object(self, arg1: Any, arg2: Any) -> bool:
         if not (self._is_object(arg1) and self._is_object(arg2)):

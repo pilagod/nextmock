@@ -1,5 +1,6 @@
 import pytest
 
+from enum import Enum
 from typing import List
 
 from ..arg import Arg
@@ -229,3 +230,14 @@ class TestMockWithArgs:
         assert m(a=1, b=2, c=1) == 123
         assert m(a=1, b=2, c=9) == 123
         assert m(a=1, b=2, c="123") == 123
+
+    # enum
+
+    class Category(Enum):
+        A = "a"
+        B = "b"
+
+    def test_with_args_should_return_fake_result_when_enum_args_matched(self):
+        m = Mock()
+        m.with_args(self.Category.A).returns(123)
+        assert m(self.Category.A) == 123
