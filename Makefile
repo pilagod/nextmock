@@ -5,3 +5,7 @@ build:
 .PHONY: publish
 publish:
 	python -m twine upload dist/*
+
+.PHONY: test
+test:
+	pytest nextmock/test
