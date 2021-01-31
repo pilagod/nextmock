@@ -1,4 +1,4 @@
-# NextMock [![Build Status](https://travis-ci.com/pilagod/nextmock.svg?branch=master)](https://travis-ci.com/pilagod/nextmock)
+# NextMock [![Build Status](https://travis-ci.com/pilagod/nextmock.svg?branch=master)](https://travis-ci.com/pilagod/nextmock) [![Coverage Status](https://coveralls.io/repos/github/pilagod/nextmock/badge.svg?branch=master)](https://coveralls.io/github/pilagod/nextmock?branch=master)
 
 NextMock is an enhanced mock for [unittest.mock.Mock](https://docs.python.org/3/library/unittest.mock.html#unittest.mock.Mock).
 
