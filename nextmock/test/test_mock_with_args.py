@@ -235,8 +235,14 @@ class TestMockWithArgs:
 
     class Category(Enum):
         A = "a"
+        B = "b"
 
     def test_with_args_should_return_stub_result_when_enum_args_matched(self):
         m = Mock()
         m.with_args(self.Category.A).returns(123)
         assert m(self.Category.A) == 123
+
+    def test_with_args_should_not_return_stub_result_when_enum_args_not_matched(self):
+        m = Mock()
+        m.with_args(self.Category.A).returns(123)
+        assert m(self.Category.B) != 123
