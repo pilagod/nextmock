@@ -9,7 +9,9 @@ python:
 # command to install dependencies
 install:
   - pip install -r requirements.txt
+  - pip install coveralls
 
 # command to run tests
 script:
-  - make test
+  - coverage run --source=nextmock -m pytest nextmock/test
+  - coveralls
