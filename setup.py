@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="nextmock",
-    version="0.0.0",
+    version="0.0.1",
     author="pilagod",
     author_email="pilagooood@gmail.com",
     keywords="testing unit mock",
