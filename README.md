@@ -96,6 +96,21 @@ Return/raise stub result/error only when given args are matched.
     assert str(e.value) == "value error"
     ```
 
+- enum matching (0.0.1)
+
+    ```python
+    class Category(Enum):
+        A = "a"
+        B = "b"
+
+    m = Mock()
+
+    m.with_args(Category.A).returns(123)
+
+    assert m(Category.A) == 123
+    assert m(Category.B) != 123
+    ```
+
 ### returns
 
 Return stub result without matching args.
