@@ -9,3 +9,7 @@ publish:
 .PHONY: test
 test:
 	pytest nextmock/test
+
+.PHONY: freeze
+freeze:
+	pip freeze > requirements.txt
