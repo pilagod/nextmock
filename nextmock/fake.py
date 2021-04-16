@@ -51,7 +51,7 @@ class Fake:
         return True
 
     def _execute(self) -> Any:
-        if self._result:
+        if self._result is not None:
             return self._result
         if self._exception:
             raise self._exception
